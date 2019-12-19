@@ -1,0 +1,36 @@
+{
+    "id": "612c76bc88f95f50c27dfe7d14e8fd9a",
+    "name": "createNonResidentAccount",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "d31f29c2bf19dec6bd01707e07c562c5",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/\/holdings\/accounts\/nonResidentAccounts",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "612c76bc88f95f50c27dfe7d14e8fd9a",
+            "rawModeData": ""
+        }
+    ]
+}
