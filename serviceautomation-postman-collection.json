@@ -1,0 +1,44 @@
+{
+    "id": "dd0397f28d51dc59664f38904cb0c1c0",
+    "name": "Serviceautomation",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "a2f8a64d853db5a1b62da36948e9efe7",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v2.0.0\/v2.0.0\/\/system\/services\/processes\/{processId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "processId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "dd0397f28d51dc59664f38904cb0c1c0",
+            "rawModeData": ""
+        }
+    ]
+}
