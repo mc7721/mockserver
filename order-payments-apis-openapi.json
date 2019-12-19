@@ -1,0 +1,1043 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Order Payments APIs",
+        "description": "Allows the creation, viewing and management of payments and transfers",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0"
+    ],
+    "paths": {
+        "\/holdings\/accounts\/{accountId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/holdings\/accounts\/{accountId}\/transactions": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetAccountTransactions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId."
+                    },
+                    {
+                        "name": "fromDate",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "processingDate",
+                        "in": "query",
+                        "description": "The bank date that an accounting movement is applied to the bank GL"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/holdings\/accounts\/{accountId}\/alertEvents": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetEligibleEvents",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/holdings\/accounts\/{accountId}\/cards": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetAccountCards",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/holdings\/accounts\/{accountId}\/reservedFunds": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetReservedFunds",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/payments\/fees": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPaymentFeesAndCharges",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/payments\/paymentStatus": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPaymentsAuditTrail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/payments\/{paymentId}\/paymentStatus": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPaymentAuditTrail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "paymentId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/payments\/pendingOrders": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPendingPayments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/payments\/pendingRepairOrders": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPendingRepairPayments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getAccountResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getAccountResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Random and unique string for each page. Used for security purpose",
+                        "type": "integer"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "getAccountResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "getAccountResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getAccountErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "getAccountErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getAccountTransactionsResponseQueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Random and unique string for each page. Used for security purpose",
+                        "type": "integer"
+                    },
+                    "data": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "data": {
+                "type": "object"
+            },
+            "getAccountTransactionsResponse": {
+                "type": "object",
+                "properties": {
+                    "getAccountTransactionsResponseQueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getAccountTransactionsResponseBody": {
+                "type": "array"
+            },
+            "getAccountTransactionsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getAccountTransactionsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getEligibleEventsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getEligibleEventsResponseBody": {
+                "type": "array"
+            },
+            "getEligibleEventsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getEligibleEventsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getAccountCardsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getAccountCardsResponseBody": {
+                "type": "array"
+            },
+            "getAccountCardsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getAccountCardsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getReservedFundsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getReservedFundsResponseBody": {
+                "type": "array"
+            },
+            "getReservedFundsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getReservedFundsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getPaymentFeesAndChargesResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPaymentFeesAndChargesResponseBody": {
+                "type": "array"
+            },
+            "getPaymentFeesAndChargesErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPaymentFeesAndChargesErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getPaymentsAuditTrailResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPaymentsAuditTrailResponseBody": {
+                "type": "array"
+            },
+            "getPaymentsAuditTrailErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPaymentsAuditTrailErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getPaymentAuditTrailResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPaymentAuditTrailResponseBody": {
+                "type": "array"
+            },
+            "getPaymentAuditTrailErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPaymentAuditTrailErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getPendingPaymentsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPendingPaymentsResponseBody": {
+                "type": "array"
+            },
+            "getPendingPaymentsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPendingPaymentsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "getPendingRepairPaymentsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPendingRepairPaymentsResponseBody": {
+                "type": "array"
+            },
+            "getPendingRepairPaymentsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getPendingRepairPaymentsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
