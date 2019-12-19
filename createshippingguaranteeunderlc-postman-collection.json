@@ -1,0 +1,36 @@
+{
+    "id": "52f32a4e86ca33dc8b167000dfac884e",
+    "name": "createShippingGuaranteeUnderLC",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "b05b778a2d4bb4f4f9dc236f134a1aee",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfShipLc",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "52f32a4e86ca33dc8b167000dfac884e",
+            "rawModeData": ""
+        }
+    ]
+}
