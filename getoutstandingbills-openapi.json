@@ -1,0 +1,262 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "getOutstandingBills",
+        "description": "Lists Outstanding bills for an arrangement",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0\/"
+    ],
+    "paths": {
+        "\/holdings\/arrangements\/{arrangementId}\/outstandingBills": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetOutstandingBills",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "arrangementId",
+                        "in": "path",
+                        "description": "The unique identifiier of an arrangement contract. The format of the ID is YYDDDXXXXX prefixed with AA. YYDDD is the year and date of input in julian date format, XXXXX - is a random generated string."
+                    },
+                    {
+                        "name": "fileVersion",
+                        "in": "query",
+                        "description": "Denotes the arrangement file version"
+                    },
+                    {
+                        "name": "simulationReference",
+                        "in": "query",
+                        "description": "Reference Id for Simulation"
+                    },
+                    {
+                        "name": "paymentDate",
+                        "in": "query",
+                        "description": "Date on which the payment is due"
+                    },
+                    {
+                        "name": "deferDate",
+                        "in": "query",
+                        "description": "The date on which the customer will see the bill on his statement"
+                    },
+                    {
+                        "name": "billedAmount",
+                        "in": "query",
+                        "description": "Total Billed amount"
+                    },
+                    {
+                        "name": "outstandingAmount",
+                        "in": "query",
+                        "description": "Identifies the total outstanding amount for the corresponding Liability number and Limit reference. "
+                    },
+                    {
+                        "name": "delinquentAmount",
+                        "in": "query",
+                        "description": "Delinquent Amount Repaid"
+                    },
+                    {
+                        "name": "property",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "billStatus",
+                        "in": "query",
+                        "description": "Represents the bill status"
+                    },
+                    {
+                        "name": "settlementStatus",
+                        "in": "query",
+                        "description": "Represents the settlement status of the bill"
+                    },
+                    {
+                        "name": "agingStatus",
+                        "in": "query",
+                        "description": "Denotes the aging status that thte bill underwent"
+                    },
+                    {
+                        "name": "settled",
+                        "in": "query",
+                        "description": "Indicates if the Bill is settled either from delinquency point of view or outstanding"
+                    },
+                    {
+                        "name": "paymentType",
+                        "in": "query",
+                        "description": "The payment type identifier"
+                    },
+                    {
+                        "name": "billDate",
+                        "in": "query",
+                        "description": "Date on which the bill is generated"
+                    },
+                    {
+                        "name": "billType",
+                        "in": "query",
+                        "description": "This signifies the type of the bill generated"
+                    },
+                    {
+                        "name": "paymentMethod",
+                        "in": "query",
+                        "description": "The type of method used for the payment"
+                    },
+                    {
+                        "name": "infoPayType",
+                        "in": "query",
+                        "description": "Denotes payment type linked with perdiem amounts calculated for payoff bill"
+                    },
+                    {
+                        "name": "advancePayment",
+                        "in": "query",
+                        "description": "Advance payments made on the arrangement"
+                    },
+                    {
+                        "name": "paymentIndicator",
+                        "in": "query",
+                        "description": "Indicates whether the bill is debit or credit"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getOutstandingBillsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getOutstandingBillsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request",
+                        "type": "string"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "getOutstandingBillsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "getOutstandingBillsResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getOutstandingBillsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "getOutstandingBillsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
