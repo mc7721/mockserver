@@ -1,0 +1,131 @@
+{
+    "id": "423271e12bbf8577ded4de794074ad54",
+    "name": "Order Payment Orders APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "425896111169786f235eae7b2883d0b1",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/order\/paymentOrders\/{paymentOrderId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "paymentOrderId",
+                    "description": "The unique reference number of payment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "currentPaymentState",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "paymentStatus",
+                    "description": "Indicates the Status Code of the payment. Every payment in the hub is tracked using a status code which depicts the current stage at which payment is in the workflow",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "paymentOrderProductId",
+                    "description": "Indicates the payment order product for which payment is initiated",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "debitAccountId",
+                    "description": "Indicates the debit account number of the payment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "orderingCustomerId",
+                    "description": "Indicates the customer id for the ordering customer",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Unique id expected to get as part of response from t24 on every enquiry request.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "423271e12bbf8577ded4de794074ad54",
+            "rawModeData": ""
+        },
+        {
+            "id": "bd3673a3333c8e51e2ea99084e18fbdf",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/order\/paymentOrders\/{paymentOrderId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "paymentOrderId",
+                    "description": "The unique reference number of payment",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "423271e12bbf8577ded4de794074ad54",
+            "rawModeData": ""
+        }
+    ]
+}
