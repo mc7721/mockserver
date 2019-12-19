@@ -1,0 +1,456 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Meta APIs about Screens",
+        "description": "Allows the creation, viewing and management of screen definitions",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0"
+    ],
+    "paths": {
+        "\/meta\/screens": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetScreens",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getScreensResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getScreensResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/meta\/screens\/{screenId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetScreen",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "screenId",
+                        "in": "path",
+                        "description": "The screen identifier"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getScreensResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getScreensResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "CreateScreen",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "screenId",
+                        "in": "path",
+                        "description": "The screen identifier"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Random and unique string for each page. Used for security purpose",
+                        "type": "integer"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "getScreensResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "getScreensResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getScreensErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "getScreensErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "ScreenHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getScreenResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getScreenResponseBody": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "defaults": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "recordsPerPage": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldsPerLine": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "requiredApprovers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "The name used for display purposes",
+                        "type": "string"
+                    }
+                }
+            },
+            "fields": {
+                "type": "array"
+            },
+            "defaults": {
+                "type": "array"
+            },
+            "children": {
+                "type": "array"
+            },
+            "getScreenErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getScreenErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorDetails": {
+                "type": "array"
+            },
+            "PayloadHeader": {
+                "type": "object",
+                "properties": {
+                    "override_acceptId": {
+                        "description": "pass the record Id to accept all its overrides",
+                        "type": "string"
+                    }
+                }
+            },
+            "createScreen": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createScreenBody": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "defaults": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "recordsPerPage": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldsPerLine": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "requiredApprovers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "The name used for display purposes",
+                        "type": "string"
+                    }
+                }
+            },
+            "createScreenResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createScreenResponseBody": {
+                "type": "object",
+                "properties": {
+                    "fields": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "defaults": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "children": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "recordsPerPage": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "fieldsPerLine": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "requiredApprovers": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "The name used for display purposes",
+                        "type": "string"
+                    }
+                }
+            },
+            "createScreenErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createScreenErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
