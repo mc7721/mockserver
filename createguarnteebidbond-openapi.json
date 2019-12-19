@@ -1,0 +1,360 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "createGuarnteeBidBond",
+        "description": "Version for creating Bid Bond guarantees",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/"
+    ],
+    "paths": {
+        "\/product\/guarantees\/issuanceOfBbond": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "CreateGuarnteeBidBond",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PayloadHeader": {
+                "type": "object",
+                "properties": {
+                    "override": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "override": {
+                "type": "object"
+            },
+            "createGuarnteeBidBond": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "createGuarnteeBidBondBody": {
+                "type": "object",
+                "properties": {
+                    "beneficiaryIds": {
+                        "description": "The identifier of the beneficiary",
+                        "type": "array"
+                    },
+                    "beneficiaryAddresses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "bidBondReference": {
+                        "description": "Another ID for the transaction for retrieval purposes",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "dealDate": {
+                        "description": "The date on which the deal was made.",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "expiryDate": {
+                        "description": "The date an agreement such as a credit facility or limit is due to expire",
+                        "type": "string"
+                    },
+                    "maturityDate": {
+                        "description": "The delivery period or maturity date of the contract transacted",
+                        "type": "string"
+                    },
+                    "termsAndConditions": {
+                        "description": "The description of the terms and conditions",
+                        "type": "string"
+                    },
+                    "eventsProcessing": {
+                        "description": "Determines whether the principal movements and raising entries will occur at Online or at End of Day",
+                        "type": "string"
+                    },
+                    "autoExpiry": {
+                        "description": "Decision field to determine whether the contingent entries are to be reversed after the deal expiry date or not",
+                        "type": "string"
+                    },
+                    "liquidationMode": {
+                        "description": "Indicates the manner in which the overdue payments are handled",
+                        "type": "string"
+                    },
+                    "takeMargin": {
+                        "description": "Field to check whether provision is to be taken for the transaction or not",
+                        "type": "string"
+                    },
+                    "marginPercent": {
+                        "description": "Field to state the percentage of provision to be taken",
+                        "type": "string"
+                    },
+                    "marginAmount": {
+                        "description": "Actual amount of provision that is debited for the transaction",
+                        "type": "string"
+                    },
+                    "marginDebitAccount": {
+                        "description": "Field to state the account from which the provision amount is to be debited",
+                        "type": "string"
+                    }
+                }
+            },
+            "beneficiaryIds": {
+                "type": "array"
+            },
+            "beneficiaryAddresses": {
+                "type": "array"
+            },
+            "charges": {
+                "type": "array"
+            },
+            "ScreenHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "createGuarnteeBidBondResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createGuarnteeBidBondResponseBody": {
+                "type": "object",
+                "properties": {
+                    "beneficiaryIds": {
+                        "description": "The identifier of the beneficiary",
+                        "type": "array"
+                    },
+                    "beneficiaryAddresses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "bidBondReference": {
+                        "description": "Another ID for the transaction for retrieval purposes",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "guaranteeType": {
+                        "description": "Refers to the type of the contract that is being issued",
+                        "type": "string"
+                    },
+                    "category": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "contractType": {
+                        "description": "Indicates if the position is related to Loan, Deposit ,FX-Forward\/FX-Swap",
+                        "type": "string"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "dealDate": {
+                        "description": "The date on which the deal was made.",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "expiryDate": {
+                        "description": "The date an agreement such as a credit facility or limit is due to expire",
+                        "type": "string"
+                    },
+                    "maturityDate": {
+                        "description": "The delivery period or maturity date of the contract transacted",
+                        "type": "string"
+                    },
+                    "termsAndConditions": {
+                        "description": "The description of the terms and conditions",
+                        "type": "string"
+                    },
+                    "eventsProcessing": {
+                        "description": "Determines whether the principal movements and raising entries will occur at Online or at End of Day",
+                        "type": "string"
+                    },
+                    "autoExpiry": {
+                        "description": "Decision field to determine whether the contingent entries are to be reversed after the deal expiry date or not",
+                        "type": "string"
+                    },
+                    "liquidationMode": {
+                        "description": "Indicates the manner in which the overdue payments are handled",
+                        "type": "string"
+                    },
+                    "takeMargin": {
+                        "description": "Field to check whether provision is to be taken for the transaction or not",
+                        "type": "string"
+                    },
+                    "marginPercent": {
+                        "description": "Field to state the percentage of provision to be taken",
+                        "type": "string"
+                    },
+                    "marginAmount": {
+                        "description": "Actual amount of provision that is debited for the transaction",
+                        "type": "string"
+                    },
+                    "marginDebitAccount": {
+                        "description": "Field to state the account from which the provision amount is to be debited",
+                        "type": "string"
+                    }
+                }
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "overrideBody": {
+                "type": "object",
+                "properties": {
+                    "overrideDetails": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "overrideDetails": {
+                "type": "array"
+            },
+            "createGuarnteeBidBondErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "overrideBody": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "override": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "createGuarnteeBidBondErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorDetails": {
+                "type": "array"
+            }
+        }
+    }
+}
