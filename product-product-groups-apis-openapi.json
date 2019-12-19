@@ -1,0 +1,156 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Product Product Groups APIs",
+        "description": "Retrieves product group information that is used by the legal entity",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0"
+    ],
+    "paths": {
+        "\/product\/productGroups": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetProductGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getProductGroupsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getProductGroupsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "getProductGroupsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "Reference",
+                        "type": "object"
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "getProductGroupsResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getProductGroupsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "getProductGroupsErrorResponseBody": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "getProductGroupsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
