@@ -1,0 +1,347 @@
+{
+    "id": "866728f576fc836852df8723dc8780a1",
+    "name": "Work Lists",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "298b78c899f7ccd28c044a2c460d531f",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/reference\/processWorkflow\/outstandingList",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "data",
+                    "description": "Used to pass any data values which may be required by the job when it is being run.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "processNumber",
+                    "description": "Process No",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Unique id expected to get as part of response from t24 on every enquiry request.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "credentials",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "fadac2e726b56f7424f01e347478fdc6",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/reference\/processWorkflow\/todoList",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "activityTransaction",
+                    "description": "Activity Transactions",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transactionReference",
+                    "description": "The transaction reference identifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "process",
+                    "description": "Process",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pwActivityStatus",
+                    "description": "Process workflow activity status",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Unique id expected to get as part of response from t24 on every enquiry request.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "credentials",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "a0a5c4db4ba0ded0663a465273e60e2a",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/system\/workflows\/processes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "data",
+                    "description": "Used to pass any data values which may be required by the job when it is being run.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "processNumber",
+                    "description": "Process No",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Unique id expected to get as part of response from t24 on every enquiry request.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "credentials",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "rawModeData": ""
+        },
+        {
+            "id": "7a924edd081ccdb1330d73b35b41ff6a",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/system\/workflows\/activities",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "activityTransaction",
+                    "description": "Activity Transactions",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "user",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "transactionReference",
+                    "description": "The transaction reference identifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "process",
+                    "description": "Process",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "pwActivityStatus",
+                    "description": "Process workflow activity status",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Unique id expected to get as part of response from t24 on every enquiry request.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "credentials",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "rawModeData": ""
+        }
+    ]
+}
