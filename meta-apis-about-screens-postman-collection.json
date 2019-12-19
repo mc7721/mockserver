@@ -1,0 +1,120 @@
+{
+    "id": "720c79e0d034eb3428f7bd6d7d095659",
+    "name": "Meta APIs about Screens",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "0a4d1277d141e597e9d3ca9e6874a6b3",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/screens",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Random and unique string for each page. Used for security purpose",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "720c79e0d034eb3428f7bd6d7d095659",
+            "rawModeData": ""
+        },
+        {
+            "id": "4294bc0519a3b1911999bd09f69aba7b",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/screens\/{screenId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "screenId",
+                    "description": "The screen identifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "720c79e0d034eb3428f7bd6d7d095659",
+            "rawModeData": ""
+        },
+        {
+            "id": "b29f71a306ee9274cbf7bf3b9b9505d7",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/screens\/{screenId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "screenId",
+                    "description": "The screen identifier",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "720c79e0d034eb3428f7bd6d7d095659",
+            "rawModeData": ""
+        }
+    ]
+}
