@@ -1,0 +1,172 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "PartyCustomerDirectDebits",
+        "description": "GetCustomerDirectDebitsService",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0\/"
+    ],
+    "paths": {
+        "\/party\/customers\/{customerId}\/directDebits": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetDirectDebits",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": "The identifier of the customer"
+                    },
+                    {
+                        "name": "directDebitId",
+                        "in": "query",
+                        "description": "The identifier of the direct debit mandate. Format is 'D-accountId.sequenceNumber', e.g. D-123456.1"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "DirectDebitsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/DirectDebitsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request",
+                        "type": "string"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "DirectDebitsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "DirectDebitsResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "QueryErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "QueryErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
