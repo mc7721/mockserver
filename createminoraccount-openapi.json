@@ -1,0 +1,456 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "createMinorAccount",
+        "description": "createMinorAccount",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/"
+    ],
+    "paths": {
+        "\/holdings\/accounts\/minorAccounts": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "CreateMinorAccount",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PayloadHeader": {
+                "type": "object",
+                "properties": {
+                    "override": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "override": {
+                "type": "object"
+            },
+            "createMinorAccount": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "createMinorAccountBody": {
+                "type": "object",
+                "properties": {
+                    "parties": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "activityId": {
+                        "description": "The identifier of the activity",
+                        "type": "string"
+                    },
+                    "effectiveDate": {
+                        "description": "The date on which the principal movement is effected",
+                        "type": "string"
+                    },
+                    "productId": {
+                        "description": "The identifier of the product",
+                        "type": "string"
+                    },
+                    "currencyId": {
+                        "description": "The identifier of the curreny. The is the 3 letter ISO 4217 code of the currency.",
+                        "type": "string"
+                    },
+                    "simulationId": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "balance": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "activityCharges": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "messaging": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "arrangementRules": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "agentCommission": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "rewardsPoints": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "alerts": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "balanceAvailability": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "renewal": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "txnfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "minbalfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "bonus": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "closurefee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "dormancyfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "mgmtfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "cardissuefee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "limitfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "payfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "returnfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "nsfreversalfee": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "closure": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "customer": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "crinterest": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "officers": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "schedule": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "accountsPaymentRules": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "periodiccharges": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "prefpricing": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "settlement": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "tax": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "dormancy": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "facility": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "statement": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "constraint": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "parties": {
+                "type": "array"
+            },
+            "balance": {
+                "type": "object"
+            },
+            "activityCharges": {
+                "type": "object"
+            },
+            "messaging": {
+                "type": "object"
+            },
+            "arrangementRules": {
+                "type": "object"
+            },
+            "agentCommission": {
+                "type": "object"
+            },
+            "rewardsPoints": {
+                "type": "object"
+            },
+            "alerts": {
+                "type": "object"
+            },
+            "balanceAvailability": {
+                "type": "object"
+            },
+            "renewal": {
+                "type": "object"
+            },
+            "txnfee": {
+                "type": "object"
+            },
+            "minbalfee": {
+                "type": "object"
+            },
+            "bonus": {
+                "type": "object"
+            },
+            "closurefee": {
+                "type": "object"
+            },
+            "dormancyfee": {
+                "type": "object"
+            },
+            "mgmtfee": {
+                "type": "object"
+            },
+            "cardissuefee": {
+                "type": "object"
+            },
+            "limitfee": {
+                "type": "object"
+            },
+            "payfee": {
+                "type": "object"
+            },
+            "returnfee": {
+                "type": "object"
+            },
+            "nsfreversalfee": {
+                "type": "object"
+            },
+            "closure": {
+                "type": "object"
+            },
+            "customer": {
+                "type": "object"
+            },
+            "crinterest": {
+                "type": "object"
+            },
+            "officers": {
+                "type": "object"
+            },
+            "schedule": {
+                "type": "object"
+            },
+            "accountsPaymentRules": {
+                "type": "object"
+            },
+            "periodiccharges": {
+                "type": "object"
+            },
+            "prefpricing": {
+                "type": "object"
+            },
+            "settlement": {
+                "type": "object"
+            },
+            "tax": {
+                "type": "object"
+            },
+            "dormancy": {
+                "type": "object"
+            },
+            "facility": {
+                "type": "object"
+            },
+            "statement": {
+                "type": "object"
+            },
+            "constraint": {
+                "type": "object"
+            },
+            "ArrangementHeader": {
+                "type": "object",
+                "properties": {
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "aaaId": {
+                        "description": "The Identifier of the aa record created",
+                        "type": "string"
+                    },
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "createMinorAccountResponse": {
+                "type": "object",
+                "properties": {
+                    "ArrangementHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createMinorAccountResponseBody": {
+                "type": "object",
+                "properties": {
+                    "arrangementActivity": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "activities": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "properties": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "arrangementActivity": {
+                "type": "object"
+            },
+            "activities": {
+                "type": "object"
+            },
+            "properties": {
+                "type": "object"
+            },
+            "overrideBody": {
+                "type": "object",
+                "properties": {
+                    "overrideDetails": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "overrideDetails": {
+                "type": "array"
+            },
+            "createMinorAccountErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ArrangementHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "overrideBody": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "override": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "createMinorAccountErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorDetails": {
+                "type": "array"
+            }
+        }
+    }
+}
