@@ -1,0 +1,12 @@
+{
+    "id": "dcd15cda4253c670ea5350821f6f6cdc",
+    "name": "MockServer",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": []
+}
