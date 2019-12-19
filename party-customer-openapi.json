@@ -1,0 +1,629 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Party Customer",
+        "description": "GetOrCreateOrUpdate Customer",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0\/"
+    ],
+    "paths": {
+        "\/party\/customers\/{customerId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetCustomer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "CustomerResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/CustomerResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "",
+                "operationId": "UpdateCustomer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "customerId",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ScreenHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "CustomerResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "CustomerResponseBody": {
+                "type": "object",
+                "properties": {
+                    "displayNames": {
+                        "description": "The name used for display purposes",
+                        "type": "array"
+                    },
+                    "customerNames": {
+                        "description": "The name that is displayed for the customer",
+                        "type": "array"
+                    },
+                    "communicationDevices": {
+                        "description": "communication devices used by the customer.",
+                        "type": "array"
+                    },
+                    "faxIds": {
+                        "description": "!!!, faxNumber",
+                        "type": "array"
+                    },
+                    "officePhoneNumbers": {
+                        "description": "Office phone numbers.",
+                        "type": "array"
+                    },
+                    "streets": {
+                        "description": "The first line of Customer's base address",
+                        "type": "array"
+                    },
+                    "addresses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "addressCities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "countries": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "legalDetails": {
+                        "description": "legal details about the customer.",
+                        "type": "array"
+                    },
+                    "otherNationalityIds": {
+                        "description": "Primary nationality of the customer.",
+                        "type": "array"
+                    },
+                    "employDetails": {
+                        "description": "Employment details of the customer.",
+                        "type": "array"
+                    },
+                    "residenceDetails": {
+                        "description": "Residential details of the customer.",
+                        "type": "array"
+                    },
+                    "relationshipDetails": {
+                        "description": "Relationship details between the customers.",
+                        "type": "array"
+                    },
+                    "postingRestrictIds": {
+                        "description": "Identifies any restrictions for posting entries that are imposed on a Customer.",
+                        "type": "array"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "dateOfBirth": {
+                        "description": "An individual's date of birth. ",
+                        "type": "string"
+                    },
+                    "customerStatus": {
+                        "description": "The internal bank status of a customer",
+                        "type": "number"
+                    },
+                    "customerMnemonic": {
+                        "description": "Specifies an alternative easy means of referencing the Customer",
+                        "type": "string"
+                    },
+                    "nationalityId": {
+                        "description": "The identifier of the nationality of a legal entity",
+                        "type": "string"
+                    },
+                    "residenceId": {
+                        "description": "The residence country identifier",
+                        "type": "string"
+                    },
+                    "accountOfficerId": {
+                        "description": "The identifier of the account officer",
+                        "type": "number"
+                    },
+                    "industryId": {
+                        "description": "The identifier of the industry",
+                        "type": "number"
+                    },
+                    "target": {
+                        "description": "Specifies how the Customer is considered by the bank and how he fits in with the Account Officer's overall marketing strategy",
+                        "type": "number"
+                    },
+                    "sectorId": {
+                        "description": "The sector identifier",
+                        "type": "number"
+                    },
+                    "gender": {
+                        "description": "The gender of the individual",
+                        "type": "string"
+                    },
+                    "maritalStatus": {
+                        "description": "Identifies the marital status of the customer.",
+                        "type": "string"
+                    },
+                    "customerCompany": {
+                        "description": "Branch of the customer. Accepts the id of the COMPANY which shares customer with currently signed in company",
+                        "type": "string"
+                    },
+                    "customerLiability": {
+                        "description": "Indicates the customer consolidation number for credit grouping purposes,within the same branch\/country.",
+                        "type": "number"
+                    },
+                    "postCode": {
+                        "description": "Identifies the postal code for customer.",
+                        "type": "number"
+                    },
+                    "contactDate": {
+                        "description": "Date that first contact was made with the Customer.",
+                        "type": "string"
+                    },
+                    "introducer": {
+                        "description": "Name of the person who introduced the Customer to the bank",
+                        "type": "string"
+                    },
+                    "kycRelationship": {
+                        "description": "Indicates the relationship this customer is being held in.",
+                        "type": "string"
+                    },
+                    "isKycComplete": {
+                        "description": "To check information related to the customer has been collected and verified.",
+                        "type": "boolean"
+                    },
+                    "kycLastReviewDate": {
+                        "description": "Date customer KYC information was last reviewed.",
+                        "type": "string"
+                    },
+                    "kycNextSystemReviewDate": {
+                        "description": "Date system has calculated customer should next be reviewed.",
+                        "type": "string"
+                    },
+                    "kycNextReviewDate": {
+                        "description": "Manual specification of next review date.",
+                        "type": "string"
+                    },
+                    "amlCheck": {
+                        "description": "Describe the legal controls that is required by institutions to prevent or report Anti Money Laundering activities. It can have YES, SENT or NULL values.",
+                        "type": "string"
+                    },
+                    "amlResult": {
+                        "description": "Describe the results of Anti Money Laundering.",
+                        "type": "string"
+                    },
+                    "amlLastResultDate": {
+                        "description": "The last date of Anti Money Laundering result is performed.",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "title of the individual",
+                        "type": "string"
+                    },
+                    "isSecureMessage": {
+                        "description": "To identify whether the customer will receive a SECURE message or not. ",
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "description": "The last name of an individual",
+                        "type": "string"
+                    },
+                    "givenName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "displayNames": {
+                "type": "array"
+            },
+            "customerNames": {
+                "type": "array"
+            },
+            "communicationDevices": {
+                "type": "array"
+            },
+            "faxIds": {
+                "type": "array"
+            },
+            "officePhoneNumbers": {
+                "type": "array"
+            },
+            "streets": {
+                "type": "array"
+            },
+            "addresses": {
+                "type": "array"
+            },
+            "addressCities": {
+                "type": "array"
+            },
+            "countries": {
+                "type": "array"
+            },
+            "legalDetails": {
+                "type": "array"
+            },
+            "otherNationalityIds": {
+                "type": "array"
+            },
+            "employDetails": {
+                "type": "array"
+            },
+            "residenceDetails": {
+                "type": "array"
+            },
+            "relationshipDetails": {
+                "type": "array"
+            },
+            "postingRestrictIds": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "overrideBody": {
+                "type": "object",
+                "properties": {
+                    "overrideDetails": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "overrideDetails": {
+                "type": "array"
+            },
+            "ScreenErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "overrideBody": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "override": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "ScreenErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorDetails": {
+                "type": "array"
+            },
+            "PayloadHeader": {
+                "type": "object",
+                "properties": {
+                    "override": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "override": {
+                "type": "object"
+            },
+            "Customer": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "CustomerBody": {
+                "type": "object",
+                "properties": {
+                    "displayNames": {
+                        "description": "The name used for display purposes",
+                        "type": "array"
+                    },
+                    "customerNames": {
+                        "description": "The name that is displayed for the customer",
+                        "type": "array"
+                    },
+                    "communicationDevices": {
+                        "description": "communication devices used by the customer.",
+                        "type": "array"
+                    },
+                    "faxIds": {
+                        "description": "!!!, faxNumber",
+                        "type": "array"
+                    },
+                    "officePhoneNumbers": {
+                        "description": "Office phone numbers.",
+                        "type": "array"
+                    },
+                    "streets": {
+                        "description": "The first line of Customer's base address",
+                        "type": "array"
+                    },
+                    "addresses": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "addressCities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "countries": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "legalDetails": {
+                        "description": "legal details about the customer.",
+                        "type": "array"
+                    },
+                    "otherNationalityIds": {
+                        "description": "Primary nationality of the customer.",
+                        "type": "array"
+                    },
+                    "employDetails": {
+                        "description": "Employment details of the customer.",
+                        "type": "array"
+                    },
+                    "residenceDetails": {
+                        "description": "Residential details of the customer.",
+                        "type": "array"
+                    },
+                    "relationshipDetails": {
+                        "description": "Relationship details between the customers.",
+                        "type": "array"
+                    },
+                    "postingRestrictIds": {
+                        "description": "Identifies any restrictions for posting entries that are imposed on a Customer.",
+                        "type": "array"
+                    },
+                    "language": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "dateOfBirth": {
+                        "description": "An individual's date of birth. ",
+                        "type": "string"
+                    },
+                    "customerStatus": {
+                        "description": "The internal bank status of a customer",
+                        "type": "number"
+                    },
+                    "customerMnemonic": {
+                        "description": "Specifies an alternative easy means of referencing the Customer",
+                        "type": "string"
+                    },
+                    "nationalityId": {
+                        "description": "The identifier of the nationality of a legal entity",
+                        "type": "string"
+                    },
+                    "residenceId": {
+                        "description": "The residence country identifier",
+                        "type": "string"
+                    },
+                    "accountOfficerId": {
+                        "description": "The identifier of the account officer",
+                        "type": "number"
+                    },
+                    "industryId": {
+                        "description": "The identifier of the industry",
+                        "type": "number"
+                    },
+                    "target": {
+                        "description": "Specifies how the Customer is considered by the bank and how he fits in with the Account Officer's overall marketing strategy",
+                        "type": "number"
+                    },
+                    "sectorId": {
+                        "description": "The sector identifier",
+                        "type": "number"
+                    },
+                    "gender": {
+                        "description": "The gender of the individual",
+                        "type": "string"
+                    },
+                    "maritalStatus": {
+                        "description": "Identifies the marital status of the customer.",
+                        "type": "string"
+                    },
+                    "customerCompany": {
+                        "description": "Branch of the customer. Accepts the id of the COMPANY which shares customer with currently signed in company",
+                        "type": "string"
+                    },
+                    "customerLiability": {
+                        "description": "Indicates the customer consolidation number for credit grouping purposes,within the same branch\/country.",
+                        "type": "number"
+                    },
+                    "postCode": {
+                        "description": "Identifies the postal code for customer.",
+                        "type": "number"
+                    },
+                    "contactDate": {
+                        "description": "Date that first contact was made with the Customer.",
+                        "type": "string"
+                    },
+                    "introducer": {
+                        "description": "Name of the person who introduced the Customer to the bank",
+                        "type": "string"
+                    },
+                    "kycRelationship": {
+                        "description": "Indicates the relationship this customer is being held in.",
+                        "type": "string"
+                    },
+                    "isKycComplete": {
+                        "description": "To check information related to the customer has been collected and verified.",
+                        "type": "boolean"
+                    },
+                    "kycLastReviewDate": {
+                        "description": "Date customer KYC information was last reviewed.",
+                        "type": "string"
+                    },
+                    "kycNextSystemReviewDate": {
+                        "description": "Date system has calculated customer should next be reviewed.",
+                        "type": "string"
+                    },
+                    "kycNextReviewDate": {
+                        "description": "Manual specification of next review date.",
+                        "type": "string"
+                    },
+                    "amlCheck": {
+                        "description": "Describe the legal controls that is required by institutions to prevent or report Anti Money Laundering activities. It can have YES, SENT or NULL values.",
+                        "type": "string"
+                    },
+                    "amlResult": {
+                        "description": "Describe the results of Anti Money Laundering.",
+                        "type": "string"
+                    },
+                    "amlLastResultDate": {
+                        "description": "The last date of Anti Money Laundering result is performed.",
+                        "type": "string"
+                    },
+                    "title": {
+                        "description": "title of the individual",
+                        "type": "string"
+                    },
+                    "isSecureMessage": {
+                        "description": "To identify whether the customer will receive a SECURE message or not. ",
+                        "type": "string"
+                    },
+                    "lastName": {
+                        "description": "The last name of an individual",
+                        "type": "string"
+                    },
+                    "givenName": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
