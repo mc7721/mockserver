@@ -1,0 +1,269 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Holdings Entitlement Report APIs",
+        "description": "Allows the viewing of Options of the Entitlement records and the Entitlements records awaiting approval",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0\/"
+    ],
+    "paths": {
+        "\/holdings\/entitlements\/entitlementOptions": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPendingEntitlements",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "diaryId",
+                        "in": "query",
+                        "description": "The identifier of the diary"
+                    },
+                    {
+                        "name": "portfolioId",
+                        "in": "query",
+                        "description": "The identifier of the portfolio"
+                    },
+                    {
+                        "name": "eventType",
+                        "in": "query",
+                        "description": "Event Type of the DIARY"
+                    },
+                    {
+                        "name": "accountOfficerId",
+                        "in": "query",
+                        "description": "The identifier of the account officer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "PendingEntitlementsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/holdingsPendingEntitlementsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/holdings\/entitlementApprovals": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetEntitlementApprovals",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "diaryId",
+                        "in": "query",
+                        "description": "The identifier of the diary"
+                    },
+                    {
+                        "name": "portfolioId",
+                        "in": "query",
+                        "description": "The identifier of the portfolio"
+                    },
+                    {
+                        "name": "eventType",
+                        "in": "query",
+                        "description": "Event Type of the DIARY"
+                    },
+                    {
+                        "name": "accountOfficerId",
+                        "in": "query",
+                        "description": "The identifier of the account officer"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "PendingEntitlementsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/holdingsPendingEntitlementsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request",
+                        "type": "string"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "holdingsPendingEntitlementsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "holdingsPendingEntitlementsResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "QueryErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "QueryErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "holdingsEntitlementApprovalsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "holdingsEntitlementApprovalsResponseBody": {
+                "type": "array"
+            }
+        }
+    }
+}
