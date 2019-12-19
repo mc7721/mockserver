@@ -1,0 +1,126 @@
+{
+    "id": "7b2c586d81792402db5f2b4ec9243ab8",
+    "name": "Order Security Transfer Orders APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "33bcee0f331c706db40a2042dbe9274a",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/order\/securityTransferOrders\/inboundOrders",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Random and unique string for each page. Used for security purpose",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7b2c586d81792402db5f2b4ec9243ab8",
+            "rawModeData": ""
+        },
+        {
+            "id": "9bdfb2d7756a1001a942efb639d68901",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/order\/securityTransferOrders\/outboundOrders",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Random and unique string for each page. Used for security purpose",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7b2c586d81792402db5f2b4ec9243ab8",
+            "rawModeData": ""
+        },
+        {
+            "id": "3a9cce792f35630f95aa88fcf14d1578",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/order\/securityTransferOrders",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7b2c586d81792402db5f2b4ec9243ab8",
+            "rawModeData": ""
+        }
+    ]
+}
