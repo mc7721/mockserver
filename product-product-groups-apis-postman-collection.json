@@ -1,0 +1,58 @@
+{
+    "id": "8d5db630f6a3b9e9909c3ebe4515eff2",
+    "name": "Product Product Groups APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "ff7d48beb45a34fd6a9bf52f2bf8a7c3",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/product\/productGroups",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "page_size",
+                    "description": "The total number of records per page",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_start",
+                    "description": "The record from which the response should be displayed",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_token",
+                    "description": "Random and unique string for each page. Used for security purpose",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "8d5db630f6a3b9e9909c3ebe4515eff2",
+            "rawModeData": ""
+        }
+    ]
+}
