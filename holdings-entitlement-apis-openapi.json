@@ -1,0 +1,409 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Holdings Entitlement APIs",
+        "description": "Allows the viewing and management of entitlements",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0\/"
+    ],
+    "paths": {
+        "\/holdings\/entitlements\/{entitlementId}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetSecurityEntitlement",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "entitlementId",
+                        "in": "path",
+                        "description": "The identifier of the entitlement"
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "SecurityEntitlementResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/holdingsSecurityEntitlementResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "put": {
+                "summary": "",
+                "description": "",
+                "operationId": "UpdateSecurityEntitlement",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "entitlementId",
+                        "in": "path",
+                        "description": "The identifier of the entitlement"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "PayloadHeader": {
+                "type": "object",
+                "properties": {
+                    "override": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "override": {
+                "type": "object"
+            },
+            "audit": {
+                "type": "object"
+            },
+            "holdingsSecurityEntitlement": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "holdingsSecurityEntitlementBody": {
+                "type": "object",
+                "properties": {
+                    "optionDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "sellBuyOptionDescriptions": {
+                        "description": "The description of the sell\/buy Option",
+                        "type": "array"
+                    },
+                    "localTaxAmounts": {
+                        "description": "Holds the local tax amount",
+                        "type": "array"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "number"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "qualifyingHolding": {
+                        "description": "The Portfolio's holding in the original security",
+                        "type": "number"
+                    },
+                    "eventQuantity": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "optionSelected": {
+                        "description": "The option selected from the total number of options available",
+                        "type": "number"
+                    },
+                    "overOptionDescription": {
+                        "description": "Option description or indicator for oversubscription",
+                        "type": "string"
+                    },
+                    "overSubscriptionPrice": {
+                        "description": "Holds the price at which Over subscribed quantity is to be sold",
+                        "type": "number"
+                    },
+                    "overSubscribedQuantity": {
+                        "description": "Holds Amount of additional shares that the user want to subscribe",
+                        "type": "number"
+                    },
+                    "accountCurrency": {
+                        "description": "The currency of the account",
+                        "type": "string"
+                    },
+                    "sourceTaxAmount": {
+                        "description": "Holds the source tax amount",
+                        "type": "number"
+                    },
+                    "commissionAmount": {
+                        "description": "The amount of commission charged",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "optStatus": {
+                        "description": "Indicates the current status of the ENTITLEMENT",
+                        "type": "string"
+                    },
+                    "eventCurrency": {
+                        "description": "Currency in which the event occurs",
+                        "type": "string"
+                    }
+                }
+            },
+            "optionDetails": {
+                "type": "array"
+            },
+            "sellBuyOptionDescriptions": {
+                "type": "array"
+            },
+            "localTaxAmounts": {
+                "type": "array"
+            },
+            "ScreenHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "holdingsSecurityEntitlementResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "holdingsSecurityEntitlementResponseBody": {
+                "type": "object",
+                "properties": {
+                    "optionDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "sellBuyOptionDescriptions": {
+                        "description": "The description of the sell\/buy Option",
+                        "type": "array"
+                    },
+                    "localTaxAmounts": {
+                        "description": "Holds the local tax amount",
+                        "type": "array"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "number"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "qualifyingHolding": {
+                        "description": "The Portfolio's holding in the original security",
+                        "type": "number"
+                    },
+                    "eventQuantity": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "currency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "optionSelected": {
+                        "description": "The option selected from the total number of options available",
+                        "type": "number"
+                    },
+                    "overOptionDescription": {
+                        "description": "Option description or indicator for oversubscription",
+                        "type": "string"
+                    },
+                    "overSubscriptionPrice": {
+                        "description": "Holds the price at which Over subscribed quantity is to be sold",
+                        "type": "number"
+                    },
+                    "overSubscribedQuantity": {
+                        "description": "Holds Amount of additional shares that the user want to subscribe",
+                        "type": "number"
+                    },
+                    "accountCurrency": {
+                        "description": "The currency of the account",
+                        "type": "string"
+                    },
+                    "sourceTaxAmount": {
+                        "description": "Holds the source tax amount",
+                        "type": "number"
+                    },
+                    "commissionAmount": {
+                        "description": "The amount of commission charged",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "optStatus": {
+                        "description": "Indicates the current status of the ENTITLEMENT",
+                        "type": "string"
+                    },
+                    "eventCurrency": {
+                        "description": "Currency in which the event occurs",
+                        "type": "string"
+                    }
+                }
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The Identifier of the record created",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "The status of the record",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "The status of the transaction",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "overrideBody": {
+                "type": "object",
+                "properties": {
+                    "overrideDetails": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "overrideDetails": {
+                "type": "array"
+            },
+            "ScreenErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "overrideBody": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "override": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "ScreenErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorDetails": {
+                "type": "array"
+            }
+        }
+    }
+}
