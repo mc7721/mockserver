@@ -1,0 +1,89 @@
+{
+    "id": "b9834177665ba015891371884d014d9e",
+    "name": "Party Customer",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "44ce4c8768e29a73e4ea89f5b24684b1",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/party\/customers\/{customerId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "customerId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "credentials",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b9834177665ba015891371884d014d9e",
+            "rawModeData": ""
+        },
+        {
+            "id": "c53eb9454731cdb90c13564ad4c93296",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/party\/customers\/{customerId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "customerId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "b9834177665ba015891371884d014d9e",
+            "rawModeData": ""
+        }
+    ]
+}
