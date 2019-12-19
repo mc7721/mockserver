@@ -1,0 +1,1171 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Order Security Transfer Orders APIs",
+        "description": "Allows the creation, viewing and management of security transfer orders",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0"
+    ],
+    "paths": {
+        "\/order\/securityTransferOrders\/inboundOrders": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetInboundSecurityTransferOrders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getInboundSecurityTransferOrdersResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getInboundSecurityTransferOrdersResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/securityTransferOrders\/outboundOrders": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetOutboundSecurityTransferOrders",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Random and unique string for each page. Used for security purpose"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "getInboundSecurityTransferOrdersResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getInboundSecurityTransferOrdersResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/order\/securityTransferOrders": {
+            "post": {
+                "summary": "",
+                "description": "",
+                "operationId": "CreateSecurityTransferOrder",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "getInboundSecurityTransferOrdersResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "getInboundSecurityTransferOrdersResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getInboundSecurityTransferOrdersErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "getInboundSecurityTransferOrdersErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "getOutboundSecurityTransferOrdersResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getOutboundSecurityTransferOrdersResponseBody": {
+                "type": "array"
+            },
+            "getOutboundSecurityTransferOrdersErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getOutboundSecurityTransferOrdersErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "PayloadHeader": {
+                "type": "object",
+                "properties": {
+                    "override_acceptId": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "createSecurityTransferOrder": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createSecurityTransferOrderBody": {
+                "type": "object",
+                "properties": {
+                    "taxes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "instructions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "transactionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "instrumentCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transferDate": {
+                        "description": "The transfer date of the transaction",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "string"
+                    },
+                    "deliveryInstruction": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "description": "The nominal quantity",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The Price at which the NOMINAL.AMOUNT of the Security is to be valued for the transaction.",
+                        "type": "number"
+                    },
+                    "nominee": {
+                        "description": "The nominee company of the security",
+                        "type": "string"
+                    },
+                    "grossCost": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "valueInInstrumentCurrency": {
+                        "description": "The amount converted to the currency of the instrument",
+                        "type": "string"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "actualCharges": {
+                        "description": "The amount of the charge that was applied",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "interestAmount": {
+                        "description": "The accrued Interest due or accrued.",
+                        "type": "number"
+                    },
+                    "netAmountInInstrumentCurrency": {
+                        "description": "The net amount of the current valuation of the Securities being transferred, ie. the gross amount +\/- Charges + accrued Interest",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "exchangeRate": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commission": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commissionName": {
+                        "description": "The name that is displayed for the commission",
+                        "type": "string"
+                    },
+                    "commissionRate": {
+                        "description": "The commission by percentage. Allowed only for manual commission. Calculated commission amount can be overwritten manually.",
+                        "type": "string"
+                    },
+                    "changeInBeneficialOwner": {
+                        "description": " Indicates whether there is a beneficial owner change as a result of the transfer",
+                        "type": "string"
+                    },
+                    "stampTax": {
+                        "description": "The Stamp Tax amount charged to the Customer for the trade",
+                        "type": "string"
+                    },
+                    "counterpartyId": {
+                        "description": "The identifier of the counter party",
+                        "type": "string"
+                    },
+                    "BIC": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "nostroId": {
+                        "description": "The identifier of the nostro account",
+                        "type": "string"
+                    },
+                    "nostroCurrency": {
+                        "description": "The currency of the nostro",
+                        "type": "string"
+                    },
+                    "counterpartyDepository": {
+                        "description": "Specifies the Depository(ies) that the Broker will be delivering the Securities from or to.",
+                        "type": "string"
+                    },
+                    "brokerAmount": {
+                        "description": "Specifies the Net.Amount due to\/from the Broker (Field 23) for the transaction.Input is only required where the Security. Transfer is made against payment.Standard Amount Format 0-14 numeric characters (number of decimal places dependant on the currency of theSecurity). (Optional input) Default value = 0.",
+                        "type": "number"
+                    }
+                }
+            },
+            "taxes": {
+                "type": "array"
+            },
+            "instructions": {
+                "type": "array"
+            },
+            "ScreenHeader": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transactionStatus": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "createSecurityTransferOrderResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createSecurityTransferOrderResponseBody": {
+                "type": "object",
+                "properties": {
+                    "taxes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "instructions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "transactionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "instrumentCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transferDate": {
+                        "description": "The transfer date of the transaction",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "string"
+                    },
+                    "deliveryInstruction": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "description": "The nominal quantity",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The Price at which the NOMINAL.AMOUNT of the Security is to be valued for the transaction.",
+                        "type": "number"
+                    },
+                    "nominee": {
+                        "description": "The nominee company of the security",
+                        "type": "string"
+                    },
+                    "grossCost": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "valueInInstrumentCurrency": {
+                        "description": "The amount converted to the currency of the instrument",
+                        "type": "string"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "actualCharges": {
+                        "description": "The amount of the charge that was applied",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "interestAmount": {
+                        "description": "The accrued Interest due or accrued.",
+                        "type": "number"
+                    },
+                    "netAmountInInstrumentCurrency": {
+                        "description": "The net amount of the current valuation of the Securities being transferred, ie. the gross amount +\/- Charges + accrued Interest",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "exchangeRate": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commission": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commissionName": {
+                        "description": "The name that is displayed for the commission",
+                        "type": "string"
+                    },
+                    "commissionRate": {
+                        "description": "The commission by percentage. Allowed only for manual commission. Calculated commission amount can be overwritten manually.",
+                        "type": "string"
+                    },
+                    "changeInBeneficialOwner": {
+                        "description": " Indicates whether there is a beneficial owner change as a result of the transfer",
+                        "type": "string"
+                    },
+                    "stampTax": {
+                        "description": "The Stamp Tax amount charged to the Customer for the trade",
+                        "type": "string"
+                    },
+                    "counterpartyId": {
+                        "description": "The identifier of the counter party",
+                        "type": "string"
+                    },
+                    "BIC": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "nostroId": {
+                        "description": "The identifier of the nostro account",
+                        "type": "string"
+                    },
+                    "nostroCurrency": {
+                        "description": "The currency of the nostro",
+                        "type": "string"
+                    },
+                    "counterpartyDepository": {
+                        "description": "Specifies the Depository(ies) that the Broker will be delivering the Securities from or to.",
+                        "type": "string"
+                    },
+                    "brokerAmount": {
+                        "description": "Specifies the Net.Amount due to\/from the Broker (Field 23) for the transaction.Input is only required where the Security. Transfer is made against payment.Standard Amount Format 0-14 numeric characters (number of decimal places dependant on the currency of theSecurity). (Optional input) Default value = 0.",
+                        "type": "number"
+                    }
+                }
+            },
+            "createSecurityTransferOrderErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "createSecurityTransferOrderErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "errorDetails": {
+                "type": "array"
+            },
+            "updateSecurityTransferOrder": {
+                "type": "object",
+                "properties": {
+                    "PayloadHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "updateSecurityTransferOrderBody": {
+                "type": "object",
+                "properties": {
+                    "taxes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "instructions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "transactionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "instrumentCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transferDate": {
+                        "description": "The transfer date of the transaction",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "string"
+                    },
+                    "deliveryInstruction": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "description": "The nominal quantity",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The Price at which the NOMINAL.AMOUNT of the Security is to be valued for the transaction.",
+                        "type": "number"
+                    },
+                    "nominee": {
+                        "description": "The nominee company of the security",
+                        "type": "string"
+                    },
+                    "grossCost": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "valueInInstrumentCurrency": {
+                        "description": "The amount converted to the currency of the instrument",
+                        "type": "string"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "actualCharges": {
+                        "description": "The amount of the charge that was applied",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "interestAmount": {
+                        "description": "The accrued Interest due or accrued.",
+                        "type": "number"
+                    },
+                    "netAmountInInstrumentCurrency": {
+                        "description": "The net amount of the current valuation of the Securities being transferred, ie. the gross amount +\/- Charges + accrued Interest",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "exchangeRate": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commission": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commissionName": {
+                        "description": "The name that is displayed for the commission",
+                        "type": "string"
+                    },
+                    "commissionRate": {
+                        "description": "The commission by percentage. Allowed only for manual commission. Calculated commission amount can be overwritten manually.",
+                        "type": "string"
+                    },
+                    "changeInBeneficialOwner": {
+                        "description": " Indicates whether there is a beneficial owner change as a result of the transfer",
+                        "type": "string"
+                    },
+                    "stampTax": {
+                        "description": "The Stamp Tax amount charged to the Customer for the trade",
+                        "type": "string"
+                    },
+                    "counterpartyId": {
+                        "description": "The identifier of the counter party",
+                        "type": "string"
+                    },
+                    "BIC": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "nostroId": {
+                        "description": "The identifier of the nostro account",
+                        "type": "string"
+                    },
+                    "nostroCurrency": {
+                        "description": "The currency of the nostro",
+                        "type": "string"
+                    },
+                    "counterpartyDepository": {
+                        "description": "Specifies the Depository(ies) that the Broker will be delivering the Securities from or to.",
+                        "type": "string"
+                    },
+                    "brokerAmount": {
+                        "description": "Specifies the Net.Amount due to\/from the Broker (Field 23) for the transaction.Input is only required where the Security. Transfer is made against payment.Standard Amount Format 0-14 numeric characters (number of decimal places dependant on the currency of theSecurity). (Optional input) Default value = 0.",
+                        "type": "number"
+                    }
+                }
+            },
+            "updateSecurityTransferOrderResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "updateSecurityTransferOrderResponseBody": {
+                "type": "object",
+                "properties": {
+                    "taxes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "instructions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "transactionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "instrumentCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transferDate": {
+                        "description": "The transfer date of the transaction",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "string"
+                    },
+                    "deliveryInstruction": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "description": "The nominal quantity",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The Price at which the NOMINAL.AMOUNT of the Security is to be valued for the transaction.",
+                        "type": "number"
+                    },
+                    "nominee": {
+                        "description": "The nominee company of the security",
+                        "type": "string"
+                    },
+                    "grossCost": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "valueInInstrumentCurrency": {
+                        "description": "The amount converted to the currency of the instrument",
+                        "type": "string"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "actualCharges": {
+                        "description": "The amount of the charge that was applied",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "interestAmount": {
+                        "description": "The accrued Interest due or accrued.",
+                        "type": "number"
+                    },
+                    "netAmountInInstrumentCurrency": {
+                        "description": "The net amount of the current valuation of the Securities being transferred, ie. the gross amount +\/- Charges + accrued Interest",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "exchangeRate": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commission": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commissionName": {
+                        "description": "The name that is displayed for the commission",
+                        "type": "string"
+                    },
+                    "commissionRate": {
+                        "description": "The commission by percentage. Allowed only for manual commission. Calculated commission amount can be overwritten manually.",
+                        "type": "string"
+                    },
+                    "changeInBeneficialOwner": {
+                        "description": " Indicates whether there is a beneficial owner change as a result of the transfer",
+                        "type": "string"
+                    },
+                    "stampTax": {
+                        "description": "The Stamp Tax amount charged to the Customer for the trade",
+                        "type": "string"
+                    },
+                    "counterpartyId": {
+                        "description": "The identifier of the counter party",
+                        "type": "string"
+                    },
+                    "BIC": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "nostroId": {
+                        "description": "The identifier of the nostro account",
+                        "type": "string"
+                    },
+                    "nostroCurrency": {
+                        "description": "The currency of the nostro",
+                        "type": "string"
+                    },
+                    "counterpartyDepository": {
+                        "description": "Specifies the Depository(ies) that the Broker will be delivering the Securities from or to.",
+                        "type": "string"
+                    },
+                    "brokerAmount": {
+                        "description": "Specifies the Net.Amount due to\/from the Broker (Field 23) for the transaction.Input is only required where the Security. Transfer is made against payment.Standard Amount Format 0-14 numeric characters (number of decimal places dependant on the currency of theSecurity). (Optional input) Default value = 0.",
+                        "type": "number"
+                    }
+                }
+            },
+            "updateSecurityTransferOrderErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "updateSecurityTransferOrderErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "getSecurityTransferOrderResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getSecurityTransferOrderResponseBody": {
+                "type": "object",
+                "properties": {
+                    "taxes": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "instructions": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "transactionType": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "instrumentId": {
+                        "description": "The identifier of the instrument",
+                        "type": "string"
+                    },
+                    "instrumentCurrency": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "transferDate": {
+                        "description": "The transfer date of the transaction",
+                        "type": "string"
+                    },
+                    "valueDate": {
+                        "description": "The applicable value date",
+                        "type": "string"
+                    },
+                    "depositoryId": {
+                        "description": "The identifier of the depository. Must be a customerSecurity of type depository.",
+                        "type": "string"
+                    },
+                    "deliveryInstruction": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "customerId": {
+                        "description": "The identifier of the customer",
+                        "type": "string"
+                    },
+                    "portfolioId": {
+                        "description": "The identifier of the portfolio",
+                        "type": "string"
+                    },
+                    "quantity": {
+                        "description": "The nominal quantity",
+                        "type": "string"
+                    },
+                    "price": {
+                        "description": "The Price at which the NOMINAL.AMOUNT of the Security is to be valued for the transaction.",
+                        "type": "number"
+                    },
+                    "nominee": {
+                        "description": "The nominee company of the security",
+                        "type": "string"
+                    },
+                    "grossCost": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "valueInInstrumentCurrency": {
+                        "description": "The amount converted to the currency of the instrument",
+                        "type": "string"
+                    },
+                    "charges": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "actualCharges": {
+                        "description": "The amount of the charge that was applied",
+                        "type": "string"
+                    },
+                    "accountId": {
+                        "description": "The identifier of the account. Often referred to as the account number, yet for consistency this is always referred to as accountId.",
+                        "type": "string"
+                    },
+                    "interestAmount": {
+                        "description": "The accrued Interest due or accrued.",
+                        "type": "number"
+                    },
+                    "netAmountInInstrumentCurrency": {
+                        "description": "The net amount of the current valuation of the Securities being transferred, ie. the gross amount +\/- Charges + accrued Interest",
+                        "type": "number"
+                    },
+                    "netAmountInAccountCurrency": {
+                        "description": "The net amount due to or from the Customer after +\/- Charges",
+                        "type": "number"
+                    },
+                    "exchangeRate": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commission": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "commissionName": {
+                        "description": "The name that is displayed for the commission",
+                        "type": "string"
+                    },
+                    "commissionRate": {
+                        "description": "The commission by percentage. Allowed only for manual commission. Calculated commission amount can be overwritten manually.",
+                        "type": "string"
+                    },
+                    "changeInBeneficialOwner": {
+                        "description": " Indicates whether there is a beneficial owner change as a result of the transfer",
+                        "type": "string"
+                    },
+                    "stampTax": {
+                        "description": "The Stamp Tax amount charged to the Customer for the trade",
+                        "type": "string"
+                    },
+                    "counterpartyId": {
+                        "description": "The identifier of the counter party",
+                        "type": "string"
+                    },
+                    "BIC": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "nostroId": {
+                        "description": "The identifier of the nostro account",
+                        "type": "string"
+                    },
+                    "nostroCurrency": {
+                        "description": "The currency of the nostro",
+                        "type": "string"
+                    },
+                    "counterpartyDepository": {
+                        "description": "Specifies the Depository(ies) that the Broker will be delivering the Securities from or to.",
+                        "type": "string"
+                    },
+                    "brokerAmount": {
+                        "description": "Specifies the Net.Amount due to\/from the Broker (Field 23) for the transaction.Input is only required where the Security. Transfer is made against payment.Standard Amount Format 0-14 numeric characters (number of decimal places dependant on the currency of theSecurity). (Optional input) Default value = 0.",
+                        "type": "number"
+                    }
+                }
+            },
+            "getSecurityTransferOrderErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "getSecurityTransferOrderErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "errorDetails": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
