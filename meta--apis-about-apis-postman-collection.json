@@ -1,0 +1,82 @@
+{
+    "id": "0813bd386dd17cd2027262abf1cac6f5",
+    "name": "Meta - APIs about APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "875f89d2d3d005c9ab34c9d3febb5c66",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/apidocs",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0813bd386dd17cd2027262abf1cac6f5",
+            "rawModeData": ""
+        },
+        {
+            "id": "5e7680d2203ef75c35de40518f1d8d21",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/apis",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0813bd386dd17cd2027262abf1cac6f5",
+            "rawModeData": ""
+        },
+        {
+            "id": "a20b9fc02c20923275b8942161a17bc4",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/internal\/apis",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "0813bd386dd17cd2027262abf1cac6f5",
+            "rawModeData": ""
+        }
+    ]
+}
