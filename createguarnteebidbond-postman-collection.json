@@ -1,0 +1,36 @@
+{
+    "id": "a6ccfc4476d40c4d975d369bbf4a3d2f",
+    "name": "createGuarnteeBidBond",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "7ec193814198e6b4b7235f59471f7417",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfBbond",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "a6ccfc4476d40c4d975d369bbf4a3d2f",
+            "rawModeData": ""
+        }
+    ]
+}
