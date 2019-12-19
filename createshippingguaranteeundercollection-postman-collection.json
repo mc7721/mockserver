@@ -1,0 +1,36 @@
+{
+    "id": "f7f731a651df01849e33c7214a08e227",
+    "name": "createShippingGuaranteeUnderCollection",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "87600478d9d8623938f8224be8296f69",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfShipColl",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "f7f731a651df01849e33c7214a08e227",
+            "rawModeData": ""
+        }
+    ]
+}
