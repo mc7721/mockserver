@@ -1,0 +1,89 @@
+{
+    "id": "616d5a34f356321521fe04edfd37c07b",
+    "name": "Holdings Entitlement APIs",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "47d07c8ac404adc52cf54e0b0d95bbf7",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/holdings\/entitlements\/{entitlementId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "entitlementId",
+                    "description": "The identifier of the entitlement",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "credentials",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "companyId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "616d5a34f356321521fe04edfd37c07b",
+            "rawModeData": ""
+        },
+        {
+            "id": "d06e6a9116a82137693bec0a23cb02cc",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/holdings\/entitlements\/{entitlementId}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "put",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "entitlementId",
+                    "description": "The identifier of the entitlement",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "616d5a34f356321521fe04edfd37c07b",
+            "rawModeData": ""
+        }
+    ]
+}
