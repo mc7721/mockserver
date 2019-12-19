@@ -1,0 +1,272 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Meta - APIs about APIs",
+        "description": "Retrieves information about the API ecosystem, both reference information and runtime metrics",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0"
+    ],
+    "paths": {
+        "\/meta\/apidocs": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetApiDocs",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "getApiDocsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getApiDocsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/meta\/apis": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetApis",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "getApiDocsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getApiDocsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/meta\/internal\/apis": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetInternalApis",
+                "deprecated": 0,
+                "parameters": [],
+                "responses": {
+                    "200": {
+                        "description": "getApiDocsResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/getApiDocsResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "getApiDocsResponse": {
+                "type": "object",
+                "properties": {
+                    "header": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "body": {
+                        "description": "Reference",
+                        "type": "object"
+                    }
+                }
+            },
+            "header": {
+                "type": "object"
+            },
+            "body": {
+                "type": "object"
+            },
+            "getApiDocsResponseBody": {
+                "type": "array"
+            },
+            "getApiDocsErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "header": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "getApiDocsErrorResponseBody": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "getApiDocsErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "getApisResponse": {
+                "type": "object",
+                "properties": {
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "Reference",
+                        "type": "object"
+                    },
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getApisResponseBody": {
+                "type": "array"
+            },
+            "getApisErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "header": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "getApisErrorResponseBody": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getApisErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "ScreenHeader": {
+                "type": "object",
+                "properties": {
+                    "endPointCount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "serviceCount": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "apiCount": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "getInternalApisResponse": {
+                "type": "object",
+                "properties": {
+                    "ScreenHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "Reference",
+                        "type": "object"
+                    }
+                }
+            },
+            "getInternalApisResponseBody": {
+                "type": "array"
+            },
+            "getInternalApisErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "header": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "getInternalApisErrorResponseBody": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "getInternalApisErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}
