@@ -1,0 +1,36 @@
+{
+    "id": "d5d85da1052891b461604b764ea79232",
+    "name": "createGuaranteeGeneric",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "9df20dfda2937dea2257a2c617681ee6",
+            "name": "",
+            "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfGtiss",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "post",
+            "pathVariableData": [],
+            "queryParams": [],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "d5d85da1052891b461604b764ea79232",
+            "rawModeData": ""
+        }
+    ]
+}
