@@ -1,0 +1,437 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1.0.0",
+        "title": "Work Lists",
+        "description": "Tod and outstanding lists",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/"
+    ],
+    "paths": {
+        "\/reference\/processWorkflow\/outstandingList": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetWorkList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "query",
+                        "description": "Used to pass any data values which may be required by the job when it is being run."
+                    },
+                    {
+                        "name": "processNumber",
+                        "in": "query",
+                        "description": "Process No"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "WorkListResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/WorkListResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/reference\/processWorkflow\/todoList": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetToDoList",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "activityTransaction",
+                        "in": "query",
+                        "description": "Activity Transactions"
+                    },
+                    {
+                        "name": "user",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "transactionReference",
+                        "in": "query",
+                        "description": "The transaction reference identifier"
+                    },
+                    {
+                        "name": "process",
+                        "in": "query",
+                        "description": "Process"
+                    },
+                    {
+                        "name": "pwActivityStatus",
+                        "in": "query",
+                        "description": "Process workflow activity status"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "WorkListResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/WorkListResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/system\/workflows\/processes": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetPendingWorkflows",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "data",
+                        "in": "query",
+                        "description": "Used to pass any data values which may be required by the job when it is being run."
+                    },
+                    {
+                        "name": "processNumber",
+                        "in": "query",
+                        "description": "Process No"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "WorkListResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/WorkListResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/system\/workflows\/activities": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "GetWorkflowPendingActivities",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "activityTransaction",
+                        "in": "query",
+                        "description": "Activity Transactions"
+                    },
+                    {
+                        "name": "user",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "transactionReference",
+                        "in": "query",
+                        "description": "The transaction reference identifier"
+                    },
+                    {
+                        "name": "process",
+                        "in": "query",
+                        "description": "Process"
+                    },
+                    {
+                        "name": "pwActivityStatus",
+                        "in": "query",
+                        "description": "Process workflow activity status"
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The total number of records per page"
+                    },
+                    {
+                        "name": "page_start",
+                        "in": "query",
+                        "description": "The record from which the response should be displayed"
+                    },
+                    {
+                        "name": "page_token",
+                        "in": "query",
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request."
+                    },
+                    {
+                        "name": "credentials",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "query",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "WorkListResponse",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/WorkListResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "QueryHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "page_size": {
+                        "description": "The total number of records per page",
+                        "type": "integer"
+                    },
+                    "page_start": {
+                        "description": "The record from which the response should be displayed",
+                        "type": "integer"
+                    },
+                    "total_size": {
+                        "description": "The total number of records present",
+                        "type": "integer"
+                    },
+                    "page_token": {
+                        "description": "Unique id expected to get as part of response from t24 on every enquiry request",
+                        "type": "string"
+                    }
+                }
+            },
+            "audit": {
+                "type": "object"
+            },
+            "WorkListResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "body": {
+                "type": "object"
+            },
+            "WorkListResponseBody": {
+                "type": "array"
+            },
+            "ErrorHeader": {
+                "type": "object",
+                "properties": {
+                    "audit": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "QueryErrorResponse": {
+                "type": "object",
+                "properties": {
+                    "ErrorHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "error": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "QueryErrorResponseBody": {
+                        "description": "",
+                        "type": "object"
+                    }
+                }
+            },
+            "error": {
+                "type": "object"
+            },
+            "QueryErrorResponseBody": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "The identifier of the error message",
+                        "type": "string"
+                    },
+                    "message": {
+                        "description": "The actual t24 error message",
+                        "type": "string"
+                    },
+                    "type": {
+                        "description": "The identifier of error type",
+                        "type": "string"
+                    }
+                }
+            },
+            "ToDoListResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "ToDoListResponseBody": {
+                "type": "array"
+            },
+            "systemPendingWorkflowsResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "systemPendingWorkflowsResponseBody": {
+                "type": "array"
+            },
+            "systemWorkflowPendingActivitiesResponse": {
+                "type": "object",
+                "properties": {
+                    "QueryHeader": {
+                        "description": "",
+                        "type": "object"
+                    },
+                    "header": {
+                        "description": "",
+                        "type": ""
+                    },
+                    "body": {
+                        "description": "",
+                        "type": ""
+                    }
+                }
+            },
+            "systemWorkflowPendingActivitiesResponseBody": {
+                "type": "array"
+            }
+        }
+    }
+}
