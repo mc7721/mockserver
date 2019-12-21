@@ -1,5 +1,5 @@
 {
-    "id": "2f3f21e543d0aaa8a89abdff9fb77384",
+    "id": "86106a7e25d9db145e9db944b77e7032",
     "name": "Get MM Events ToDate",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "e8a5a4cccbd806323a6e2e7a2463de7e",
+            "id": "73388c3d3a28b2d8c980e83cdbd87624",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/holdings\/treasury\/moneyMarkets\/events",
             "description": "",
@@ -79,7 +79,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2f3f21e543d0aaa8a89abdff9fb77384",
+            "collectionId": "86106a7e25d9db145e9db944b77e7032",
             "rawModeData": ""
         }
     ]
