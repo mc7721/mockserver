@@ -1,5 +1,5 @@
 {
-    "id": "720c79e0d034eb3428f7bd6d7d095659",
+    "id": "702ba1de34f22a7ba405191a1fc7aa9f",
     "name": "Meta APIs about Screens",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "0a4d1277d141e597e9d3ca9e6874a6b3",
+            "id": "1f9e6ff7a1efdcdf18b471afba9e8adf",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/screens",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "720c79e0d034eb3428f7bd6d7d095659",
+            "collectionId": "702ba1de34f22a7ba405191a1fc7aa9f",
             "rawModeData": ""
         },
         {
-            "id": "4294bc0519a3b1911999bd09f69aba7b",
+            "id": "88c41f951637dc3859d8aa67624fb7db",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/screens\/{screenId}",
             "description": "",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "720c79e0d034eb3428f7bd6d7d095659",
+            "collectionId": "702ba1de34f22a7ba405191a1fc7aa9f",
             "rawModeData": ""
         },
         {
-            "id": "b29f71a306ee9274cbf7bf3b9b9505d7",
+            "id": "21352a179dbec7153918d8e95eac7d7c",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/screens\/{screenId}",
             "description": "",
@@ -113,7 +113,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "720c79e0d034eb3428f7bd6d7d095659",
+            "collectionId": "702ba1de34f22a7ba405191a1fc7aa9f",
             "rawModeData": ""
         }
     ]
