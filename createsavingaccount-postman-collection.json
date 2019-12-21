@@ -1,5 +1,5 @@
 {
-    "id": "96e5742f4ad0244de1396ac296d262fb",
+    "id": "113a335db7405521d8f329d0dffb0a0d",
     "name": "createSavingAccount",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a362ceacd17e7b8e632cb3a74f400745",
+            "id": "775500eef7f8aaddca993858e1142529",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/holdings\/accounts\/savingsAccounts",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "96e5742f4ad0244de1396ac296d262fb",
+            "collectionId": "113a335db7405521d8f329d0dffb0a0d",
             "rawModeData": ""
         }
     ]
