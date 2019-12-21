@@ -1,5 +1,5 @@
 {
-    "id": "4f0be6b223a415ed9381f4960d4777dd",
+    "id": "db144085c5ed7ae646f88ac0084c5980",
     "name": "createMinorAccount",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "291d3a65b01b877668764722dc95056f",
+            "id": "45629e306fbcaf4a755fdde8abb85c5c",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/holdings\/accounts\/minorAccounts",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "4f0be6b223a415ed9381f4960d4777dd",
+            "collectionId": "db144085c5ed7ae646f88ac0084c5980",
             "rawModeData": ""
         }
     ]
