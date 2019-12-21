@@ -1,5 +1,5 @@
 {
-    "id": "dd0397f28d51dc59664f38904cb0c1c0",
+    "id": "c284f4dc5ec6d62fb6d04d9fdebbee5e",
     "name": "Serviceautomation",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a2f8a64d853db5a1b62da36948e9efe7",
+            "id": "d722f364ca73895ae6c86a3b1afa4b3c",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v2.0.0\/v2.0.0\/\/system\/services\/processes\/{processId}",
             "description": "",
@@ -37,7 +37,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "dd0397f28d51dc59664f38904cb0c1c0",
+            "collectionId": "c284f4dc5ec6d62fb6d04d9fdebbee5e",
             "rawModeData": ""
         }
     ]
