@@ -1,5 +1,5 @@
 {
-    "id": "b9834177665ba015891371884d014d9e",
+    "id": "4f4feb6eecf831e70aa87867a9ef8b84",
     "name": "Party Customer",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "44ce4c8768e29a73e4ea89f5b24684b1",
+            "id": "644c3f5af4d7ae1e0f59cc81ea97dfc0",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/party\/customers\/{customerId}",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b9834177665ba015891371884d014d9e",
+            "collectionId": "4f4feb6eecf831e70aa87867a9ef8b84",
             "rawModeData": ""
         },
         {
-            "id": "c53eb9454731cdb90c13564ad4c93296",
+            "id": "e5790cbeec325e3b07dfbe411a1d9513",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/party\/customers\/{customerId}",
             "description": "",
@@ -82,7 +82,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "b9834177665ba015891371884d014d9e",
+            "collectionId": "4f4feb6eecf831e70aa87867a9ef8b84",
             "rawModeData": ""
         }
     ]
