@@ -1,5 +1,5 @@
 {
-    "id": "6cae03b22864c5668bb9676e6f3bd1ea",
+    "id": "2a3267a827ab49f40ca2ffa3a9a4fe8f",
     "name": "PartyCustomerDirectDebits",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a8ca1937b8d574054dba311382211df3",
+            "id": "b494ebf20436a6e0be2ef5d02e5749ef",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/party\/customers\/{customerId}\/directDebits",
             "description": "",
@@ -79,7 +79,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6cae03b22864c5668bb9676e6f3bd1ea",
+            "collectionId": "2a3267a827ab49f40ca2ffa3a9a4fe8f",
             "rawModeData": ""
         }
     ]
