@@ -1,5 +1,5 @@
 {
-    "id": "52f32a4e86ca33dc8b167000dfac884e",
+    "id": "c398729e247f0a6644230672f07271fb",
     "name": "createShippingGuaranteeUnderLC",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b05b778a2d4bb4f4f9dc236f134a1aee",
+            "id": "3affb9b04ff6808a5036ef898a11de52",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfShipLc",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "52f32a4e86ca33dc8b167000dfac884e",
+            "collectionId": "c398729e247f0a6644230672f07271fb",
             "rawModeData": ""
         }
     ]
