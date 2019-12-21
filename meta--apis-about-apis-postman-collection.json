@@ -1,5 +1,5 @@
 {
-    "id": "0813bd386dd17cd2027262abf1cac6f5",
+    "id": "6a12cde03a41f3ef07a81d605100cf1d",
     "name": "Meta - APIs about APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "875f89d2d3d005c9ab34c9d3febb5c66",
+            "id": "2a13cf004a1f933de3560e4b00acc2fa",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/apidocs",
             "description": "",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0813bd386dd17cd2027262abf1cac6f5",
+            "collectionId": "6a12cde03a41f3ef07a81d605100cf1d",
             "rawModeData": ""
         },
         {
-            "id": "5e7680d2203ef75c35de40518f1d8d21",
+            "id": "6045dda3201ee98d870483e7ae669cf0",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/apis",
             "description": "",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0813bd386dd17cd2027262abf1cac6f5",
+            "collectionId": "6a12cde03a41f3ef07a81d605100cf1d",
             "rawModeData": ""
         },
         {
-            "id": "a20b9fc02c20923275b8942161a17bc4",
+            "id": "40b23883aabfa4ec8c92150b08d7b50f",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/meta\/internal\/apis",
             "description": "",
@@ -75,7 +75,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0813bd386dd17cd2027262abf1cac6f5",
+            "collectionId": "6a12cde03a41f3ef07a81d605100cf1d",
             "rawModeData": ""
         }
     ]
