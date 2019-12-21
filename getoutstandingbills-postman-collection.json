@@ -1,5 +1,5 @@
 {
-    "id": "c357d520d874ae6924bcff8ac06db3a0",
+    "id": "6c32f31a465441227fd9c5f070bb7baa",
     "name": "getOutstandingBills",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "45e19296de94567887713a498e9e28f8",
+            "id": "ae3774b9c38801a3163f5f41532d598a",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/holdings\/arrangements\/{arrangementId}\/outstandingBills",
             "description": "",
@@ -205,7 +205,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "c357d520d874ae6924bcff8ac06db3a0",
+            "collectionId": "6c32f31a465441227fd9c5f070bb7baa",
             "rawModeData": ""
         }
     ]
