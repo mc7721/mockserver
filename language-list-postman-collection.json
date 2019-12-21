@@ -1,5 +1,5 @@
 {
-    "id": "f8bcae2bb5f87d51d6608c0c88adf04f",
+    "id": "2443ae3cea890e556ea5d31194018385",
     "name": "Language List",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b9767287d13228ef9b26d18552ab422f",
+            "id": "ddc252106d22c138d5d1fa67e5b14fad",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/reference\/languages\/",
             "description": "",
@@ -65,7 +65,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f8bcae2bb5f87d51d6608c0c88adf04f",
+            "collectionId": "2443ae3cea890e556ea5d31194018385",
             "rawModeData": ""
         }
     ]
