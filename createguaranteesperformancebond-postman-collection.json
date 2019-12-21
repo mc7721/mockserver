@@ -1,5 +1,5 @@
 {
-    "id": "0634f9bcf1ce19120f06f99dc2078735",
+    "id": "2bef4e3e734af6a67046ba5c2bfe1cd5",
     "name": "createGuaranteesPerformanceBond",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "b1510b36660e6ac41f554593a46eee5c",
+            "id": "b7782ecc3977eb3df5bc3e78e9834566",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfPbond",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "0634f9bcf1ce19120f06f99dc2078735",
+            "collectionId": "2bef4e3e734af6a67046ba5c2bfe1cd5",
             "rawModeData": ""
         }
     ]
