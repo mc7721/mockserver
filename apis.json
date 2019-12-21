@@ -9,8 +9,8 @@
         "new",
         "virtualizations"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-21",
+    "modified": "2019-12-21",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -24,15 +24,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/mockserver.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/mockserver-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/mockserver-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/mockserver.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/mockserver-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/mockserver-postman-collection.json"
                 }
             ]
         },
@@ -46,15 +46,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/createnonresidentaccount.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createnonresidentaccount-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createnonresidentaccount-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/createnonresidentaccount.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createnonresidentaccount-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createnonresidentaccount-postman-collection.json"
                 }
             ]
         },
@@ -68,15 +68,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/createminoraccount.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createminoraccount-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createminoraccount-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/createminoraccount.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createminoraccount-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createminoraccount-postman-collection.json"
                 }
             ]
         },
@@ -90,15 +90,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/createsavingaccount.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createsavingaccount-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createsavingaccount-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/createsavingaccount.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createsavingaccount-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createsavingaccount-postman-collection.json"
                 }
             ]
         },
@@ -112,15 +112,15 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/meta-apis-about-screens.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/meta-apis-about-screens-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/meta-apis-about-screens-openapi.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/meta-apis-about-screens.json"
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/meta-apis-about-screens-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/meta-apis-about-screens-postman-collection.json"
                 }
             ]
         },
@@ -134,7 +134,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/holdings-entitlement-report-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/holdings-entitlement-report-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -142,7 +142,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/holdings-entitlement-report-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/holdings-entitlement-report-apis-postman-collection.json"
                 }
             ]
         },
@@ -156,7 +156,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/holdings-entitlement-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/holdings-entitlement-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -164,7 +164,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/holdings-entitlement-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/holdings-entitlement-apis-postman-collection.json"
                 }
             ]
         },
@@ -178,7 +178,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/party-customer-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/party-customer-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -186,7 +186,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/party-customer-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/party-customer-postman-collection.json"
                 }
             ]
         },
@@ -200,7 +200,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/partycustomerdirectdebits-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/partycustomerdirectdebits-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -208,7 +208,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/partycustomerdirectdebits-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/partycustomerdirectdebits-postman-collection.json"
                 }
             ]
         },
@@ -222,7 +222,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguaranteegeneric-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguaranteegeneric-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -230,7 +230,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguaranteegeneric-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguaranteegeneric-postman-collection.json"
                 }
             ]
         },
@@ -244,7 +244,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguaranteesperformancebond-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguaranteesperformancebond-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -252,7 +252,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguaranteesperformancebond-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguaranteesperformancebond-postman-collection.json"
                 }
             ]
         },
@@ -266,7 +266,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguaranteesstandbylc-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguaranteesstandbylc-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -274,7 +274,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguaranteesstandbylc-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguaranteesstandbylc-postman-collection.json"
                 }
             ]
         },
@@ -288,7 +288,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguarnteebidbond-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguarnteebidbond-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -296,7 +296,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createguarnteebidbond-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createguarnteebidbond-postman-collection.json"
                 }
             ]
         },
@@ -310,7 +310,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createshippingguaranteeundercollection-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createshippingguaranteeundercollection-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -318,7 +318,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createshippingguaranteeundercollection-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createshippingguaranteeundercollection-postman-collection.json"
                 }
             ]
         },
@@ -332,7 +332,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createshippingguaranteeunderlc-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createshippingguaranteeunderlc-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -340,7 +340,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/createshippingguaranteeunderlc-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/createshippingguaranteeunderlc-postman-collection.json"
                 }
             ]
         },
@@ -354,7 +354,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/get-mm-events-todate-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/get-mm-events-todate-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -362,7 +362,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/get-mm-events-todate-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/get-mm-events-todate-postman-collection.json"
                 }
             ]
         },
@@ -376,7 +376,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/order-payment-orders-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/order-payment-orders-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -384,7 +384,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/order-payment-orders-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/order-payment-orders-apis-postman-collection.json"
                 }
             ]
         },
@@ -398,7 +398,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/product-product-groups-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/product-product-groups-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -406,7 +406,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/product-product-groups-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/product-product-groups-apis-postman-collection.json"
                 }
             ]
         },
@@ -420,7 +420,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/language-list-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/language-list-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -428,7 +428,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/language-list-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/language-list-postman-collection.json"
                 }
             ]
         },
@@ -442,7 +442,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/meta--apis-about-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/meta--apis-about-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -450,7 +450,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/meta--apis-about-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/meta--apis-about-apis-postman-collection.json"
                 }
             ]
         },
@@ -464,7 +464,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/order-payments-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/order-payments-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -472,7 +472,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/order-payments-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/order-payments-apis-postman-collection.json"
                 }
             ]
         },
@@ -486,7 +486,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/getoutstandingbills-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/getoutstandingbills-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -494,7 +494,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/getoutstandingbills-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/getoutstandingbills-postman-collection.json"
                 }
             ]
         },
@@ -508,7 +508,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/order-security-transfer-orders-apis-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/order-security-transfer-orders-apis-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -516,7 +516,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/order-security-transfer-orders-apis-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/order-security-transfer-orders-apis-postman-collection.json"
                 }
             ]
         },
@@ -530,7 +530,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/getaccountsummary-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/getaccountsummary-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -538,7 +538,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/getaccountsummary-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/getaccountsummary-postman-collection.json"
                 }
             ]
         },
@@ -552,7 +552,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/work-lists-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/work-lists-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -560,7 +560,7 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/work-lists-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/work-lists-postman-collection.json"
                 }
             ]
         },
@@ -574,7 +574,7 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/serviceautomation-openapi.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/serviceautomation-openapi.json"
                 },
                 {
                     "type": "x-openapi",
@@ -582,13 +582,17 @@
                 },
                 {
                     "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/serviceautomation-postman-collection.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/mockserver\/master\/serviceautomation-postman-collection.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Swagger",
             "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/18935-2019-09-03-17-16-54.json"
