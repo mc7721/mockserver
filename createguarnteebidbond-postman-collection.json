@@ -1,5 +1,5 @@
 {
-    "id": "a6ccfc4476d40c4d975d369bbf4a3d2f",
+    "id": "4ad826585f17533cd548109b00e1aca1",
     "name": "createGuarnteeBidBond",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "7ec193814198e6b4b7235f59471f7417",
+            "id": "359c11a92e458ff9c60ce6982d3e1d04",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfBbond",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "a6ccfc4476d40c4d975d369bbf4a3d2f",
+            "collectionId": "4ad826585f17533cd548109b00e1aca1",
             "rawModeData": ""
         }
     ]
