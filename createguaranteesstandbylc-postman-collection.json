@@ -1,5 +1,5 @@
 {
-    "id": "9dfea4706da6f7f528c227f3f00b1b63",
+    "id": "369d71e117781ed12734e34657ffd025",
     "name": "createGuaranteesStandbyLC",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "6546b7a9347d83cc10a58da52cbe67c8",
+            "id": "02cf055f68e48eb5aa9e6604f6d2abc3",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfStdby",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "9dfea4706da6f7f528c227f3f00b1b63",
+            "collectionId": "369d71e117781ed12734e34657ffd025",
             "rawModeData": ""
         }
     ]
