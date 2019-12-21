@@ -1,5 +1,5 @@
 {
-    "id": "f7f731a651df01849e33c7214a08e227",
+    "id": "980d46cdc3986b60fe81c0e6781351a0",
     "name": "createShippingGuaranteeUnderCollection",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "87600478d9d8623938f8224be8296f69",
+            "id": "1577713a2af409bea5fa55267f118200",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfShipColl",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f7f731a651df01849e33c7214a08e227",
+            "collectionId": "980d46cdc3986b60fe81c0e6781351a0",
             "rawModeData": ""
         }
     ]
