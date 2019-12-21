@@ -1,5 +1,5 @@
 {
-    "id": "6b96b6e17dcb1139b89c58575583a3cc",
+    "id": "33b0f10f0af103675e6401ee6454d0e8",
     "name": "getAccountSummary",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "1d081b34c493371f8dcf097cd43147f4",
+            "id": "1bde5ca5c3d842cadf2081dc81da8fe3",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/holdings\/accounts\/{accountId}\/transactionLog",
             "description": "",
@@ -86,7 +86,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "6b96b6e17dcb1139b89c58575583a3cc",
+            "collectionId": "33b0f10f0af103675e6401ee6454d0e8",
             "rawModeData": ""
         }
     ]
