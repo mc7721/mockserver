@@ -1,5 +1,5 @@
 {
-    "id": "d5d85da1052891b461604b764ea79232",
+    "id": "784b45c229eadc7250444593c4b98abf",
     "name": "createGuaranteeGeneric",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "9df20dfda2937dea2257a2c617681ee6",
+            "id": "72b7d906b5cb77c1ff62af84f76b0585",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/product\/guarantees\/issuanceOfGtiss",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "d5d85da1052891b461604b764ea79232",
+            "collectionId": "784b45c229eadc7250444593c4b98abf",
             "rawModeData": ""
         }
     ]
