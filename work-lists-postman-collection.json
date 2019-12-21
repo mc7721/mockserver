@@ -1,5 +1,5 @@
 {
-    "id": "866728f576fc836852df8723dc8780a1",
+    "id": "0d6ce17289c1a4ab7f096c38d1d3ca85",
     "name": "Work Lists",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "298b78c899f7ccd28c044a2c460d531f",
+            "id": "8e989aca5d77590c84abb6e416c025a9",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/reference\/processWorkflow\/outstandingList",
             "description": "",
@@ -79,11 +79,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "collectionId": "0d6ce17289c1a4ab7f096c38d1d3ca85",
             "rawModeData": ""
         },
         {
-            "id": "fadac2e726b56f7424f01e347478fdc6",
+            "id": "82242759f2505d682c7ad70a98d965a8",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/reference\/processWorkflow\/todoList",
             "description": "",
@@ -173,11 +173,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "collectionId": "0d6ce17289c1a4ab7f096c38d1d3ca85",
             "rawModeData": ""
         },
         {
-            "id": "a0a5c4db4ba0ded0663a465273e60e2a",
+            "id": "81adf8bad65f5aaa2ab5b2d62f98eb14",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/system\/workflows\/processes",
             "description": "",
@@ -246,11 +246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "collectionId": "0d6ce17289c1a4ab7f096c38d1d3ca85",
             "rawModeData": ""
         },
         {
-            "id": "7a924edd081ccdb1330d73b35b41ff6a",
+            "id": "873b0da3427696f7bc60dbdb2b1ea464",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/v1.0.0\/\/system\/workflows\/activities",
             "description": "",
@@ -340,7 +340,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "866728f576fc836852df8723dc8780a1",
+            "collectionId": "0d6ce17289c1a4ab7f096c38d1d3ca85",
             "rawModeData": ""
         }
     ]
