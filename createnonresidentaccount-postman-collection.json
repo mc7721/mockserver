@@ -1,5 +1,5 @@
 {
-    "id": "612c76bc88f95f50c27dfe7d14e8fd9a",
+    "id": "e4064dcd1dadb423701c1adca8003914",
     "name": "createNonResidentAccount",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "d31f29c2bf19dec6bd01707e07c562c5",
+            "id": "6d6c39b701f20055df702c9b2ea15b17",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/\/holdings\/accounts\/nonResidentAccounts",
             "description": "",
@@ -29,7 +29,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "612c76bc88f95f50c27dfe7d14e8fd9a",
+            "collectionId": "e4064dcd1dadb423701c1adca8003914",
             "rawModeData": ""
         }
     ]
