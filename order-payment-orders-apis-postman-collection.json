@@ -1,5 +1,5 @@
 {
-    "id": "423271e12bbf8577ded4de794074ad54",
+    "id": "0435b1cbe06ddd4bf36b181a952e06fe",
     "name": "Order Payment Orders APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "425896111169786f235eae7b2883d0b1",
+            "id": "693b9b9cf2c92da911db57b0b6dec035",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/order\/paymentOrders\/{paymentOrderId}",
             "description": "",
@@ -93,11 +93,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "423271e12bbf8577ded4de794074ad54",
+            "collectionId": "0435b1cbe06ddd4bf36b181a952e06fe",
             "rawModeData": ""
         },
         {
-            "id": "bd3673a3333c8e51e2ea99084e18fbdf",
+            "id": "143e5c3ecd5eaecb78e214b952e7a5b8",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/order\/paymentOrders\/{paymentOrderId}",
             "description": "",
@@ -124,7 +124,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "423271e12bbf8577ded4de794074ad54",
+            "collectionId": "0435b1cbe06ddd4bf36b181a952e06fe",
             "rawModeData": ""
         }
     ]
