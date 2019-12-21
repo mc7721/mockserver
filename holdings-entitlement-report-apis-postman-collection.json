@@ -1,5 +1,5 @@
 {
-    "id": "2a9f1c2572aa725d7ca9396623ea7c71",
+    "id": "d2bdde07befc10b368c240e9310ac68a",
     "name": "Holdings Entitlement Report APIs",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "1f161e36bc233d41420efaf3bfb3d72c",
+            "id": "acdff20adab61cf7171cfe4204605990",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/holdings\/entitlements\/entitlementOptions",
             "description": "",
@@ -93,11 +93,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2a9f1c2572aa725d7ca9396623ea7c71",
+            "collectionId": "d2bdde07befc10b368c240e9310ac68a",
             "rawModeData": ""
         },
         {
-            "id": "b4afa8157a2c34e547758c3330ba53b4",
+            "id": "07f55c706042b65e7d3088986b983c8a",
             "name": "",
             "url": "http:\/\/api.server.com\/api\/v1.0.0\/\/holdings\/entitlementApprovals",
             "description": "",
@@ -180,7 +180,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "2a9f1c2572aa725d7ca9396623ea7c71",
+            "collectionId": "d2bdde07befc10b368c240e9310ac68a",
             "rawModeData": ""
         }
     ]
